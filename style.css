@@ -10,6 +10,8 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
+  grid-template-rows: min-content auto;
+  min-height: 100vh;
 }
 
 /* -----HEADER----- */
@@ -57,11 +59,13 @@ li {
   display: flex;
   align-items: center;
 }
+
 /* -----CONTENT----- */
 
 .content {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  grid-template-rows: min-content auto;
 }
 
 .projects {
