@@ -14,6 +14,12 @@ body {
   min-height: 100vh;
 }
 
+li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
 /* -----HEADER----- */
 
 header {
@@ -25,8 +31,9 @@ header {
 .top,
 .bottom {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr minmax(400px, 1fr);
   padding: 1rem;
+  margin-right: 2rem;
 }
 
 .utility {
@@ -38,6 +45,16 @@ header {
 .buttons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 1rem;
+  align-items: center;
+}
+
+button {
+  background-color: lightblue;
+  border-radius: 10rem;
+  border: none;
+  height: 2.5rem;
 }
 
 .search {
@@ -106,11 +123,6 @@ input {
   width: 1.75rem;
 }
 
-li {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-}
 
 /* -----CONTENT----- */
 
